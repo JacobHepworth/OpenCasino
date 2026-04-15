@@ -26,7 +26,7 @@ Featuring multiple classic casino games with smooth animations, sound effects, a
 
 ## 🖥️ Demo
 
-> Open the `index.html` file in your browser to play locally.
+> Open the https://jacobhepworth.github.io/OpenCasino/ in your browser to play locally.
 
 ---
 
