@@ -1,0 +1,30 @@
+# Backup your current one just in case
+Copy-Item .gitignore .gitignore.backup
+
+# Create the improved .gitignore
+@'
+# Dependencies
+node_modules/
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Environment variables / secrets
+.env
+.env.local
+
+# Capacitor / Android build artifacts (the android/ subfolders handle most of this via their own .gitignore)
+android/.gradle/
+android/build/
+android/app/build/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+
+# Optional: If you ever generate large files
+*.apk
+*.aab
+'@ | Set-Content -Path .gitignore -Encoding UTF8
